@@ -41,12 +41,15 @@ class MyApp extends StatelessWidget {
                       fontSize: 18.0, color: Colors.white, letterSpacing: 5),
                 ),
               ),
-              Divider(
-                color: Colors.white,
-                indent: 130,
-                endIndent: 130,
+              SizedBox(
+                width: 150.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.white,
+//                  thickness: 1.0,
+                ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -73,7 +76,7 @@ class MyApp extends StatelessWidget {
                 ),
                 margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
                 color: Colors.white,
                 child: Row(
