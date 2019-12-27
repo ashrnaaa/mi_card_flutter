@@ -51,56 +51,29 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                      height: 50,
-                      child: Icon(
-                        Icons.local_phone,
-                        color: Colors.teal,
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(60, 0, 0, 0),
-                      child: Text(
-                        '+46 734755800',
-                        style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.teal,
-                            letterSpacing: 1),
-                      ),
-                    ),
-                  ],
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(Icons.local_phone, color: Colors.teal),
+                  title: Text(
+                    '+46 734755800',
+                    style: TextStyle(
+                        fontSize: 18.0, color: Colors.teal, letterSpacing: 1),
+                  ),
                 ),
-                margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
               ),
               Card(
-                margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+                margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                      height: 50,
-                      child: Icon(
-                        Icons.email,
-                        color: Colors.teal,
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(60, 0, 0, 0),
-                      child: Text(
-                        'neo.azirius@gmail.com',
-                        style: TextStyle(
-                            fontSize: 16.0,
-                            color: Colors.teal,
-                            letterSpacing: 0),
-                      ),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'neo.azirius@gmail.com',
+                    style: TextStyle(
+                        fontSize: 16.0, color: Colors.teal, letterSpacing: 0),
+                  ),
                 ),
               ),
             ],
